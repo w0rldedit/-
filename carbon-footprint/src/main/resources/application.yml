@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /carbonfootprint
+spring:
+  datasource:
+    name: cfp
+    url: jdbc:mysql://localhost:3306/cfp?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true #url
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    enabled: true
+    cache: false
+    check-template: true
+    check-template-location: true
+    mode: HTML
+
+
+mybatis-plus:
+  mapper-locations:
+    - classpath:com/worldedit/carbonfootprint/mapper/**.xml
+    - classpath:com/worldedit/carbonfootprint/mapper/*/*.xml
+  global-config:
+    db-column-underline: true
+    refresh-mapper: true
+    capital-mode: true
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+    db-config:
+      id-type: auto
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
