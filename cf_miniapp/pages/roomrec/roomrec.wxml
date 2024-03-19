@@ -1,0 +1,74 @@
+<view>
+    <van-cell-group>       
+        <van-field
+        model:value="{{ water }}"
+        label="用水"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入用水m³数"
+        />
+        <van-field
+        model:value="{{ elec }}"
+        label="用电"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入用电KWh数"
+        />
+        <van-field
+        model:value="{{ coal }}"
+        label="煤"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入用煤kg数"
+        />
+        <van-field
+        model:value="{{ gas }}"
+        label="天然气"
+        clearable="true"
+        title-width="50px"
+        input-align="center"
+        placeholder="请输入用天然气m³数"
+        />
+        <van-field
+        model:value="{{ coalgas }}"
+        label="煤气"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入用煤气m³数"
+        />
+        <van-field
+        model:value="{{ wooden }}"
+        label="木家具"
+        clearable="true"
+        title-width="50px"
+        input-align="center"
+        placeholder="请输入木家具kg数"
+        />
+        <van-field
+        model:value="{{ waste }}"
+        label="垃圾"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入垃圾kg数"
+        />
+        <van-field
+        model:value="{{ hotel }}"
+        label="酒店"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入酒店住宿晚数"
+        />
+        
+    </van-cell-group>
+
+    <view style="text-align: center;margin-top: 20rpx;">
+        <van-button round type="primary"color="#0eDCC6"bind:click="submit">确定</van-button>
+    </view>
+
+</view>

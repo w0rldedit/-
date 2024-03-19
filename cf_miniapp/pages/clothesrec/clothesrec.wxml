@@ -1,0 +1,90 @@
+<view>
+    <van-cell-group>       
+        <van-field
+        model:value="{{ hatAmount }}"
+        label="帽子"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入帽子数"
+        type="number"
+        />
+        <van-field
+        model:value="{{ fabricAmount }}"
+        label="羊毛织物"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入羊毛织物件数"
+        />
+        <van-field
+        model:value="{{ denimAmount }}"
+        label="牛仔材质衣物"
+        clearable="true"
+        title-width="100rpx"
+        input-align="center"
+        placeholder="请输入牛仔衣物件数"
+        />
+        <van-field
+        model:value="{{ cottonAmount }}"
+        label="纯棉衣物"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入纯棉衣物件数"
+        />
+        <van-field
+        model:value="{{ downAmount }}"
+        label="羽绒衣物"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入羽绒衣物件数"
+        />
+        <van-field
+        model:value="{{ shoesAmount }}"
+        label="鞋子"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入鞋子双数"
+        />
+        <van-field
+        model:value="{{ glovesAmount }}"
+        label="手套"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入手套双数"
+        />
+        <van-field
+        model:value="{{ swimwearAmount }}"
+        label="泳衣"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入泳衣件数"
+        />
+        <van-field
+        model:value="{{ scarveAmount }}"
+        label="围巾"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入围巾条数"
+        />
+        <van-field
+        model:value="{{ tieAmount }}"
+        label="领带"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入领带条数"
+        />
+    </van-cell-group>
+
+    <view style="text-align: center;margin-top: 20rpx;">
+        <van-button round type="primary"color="#0eDCC6"bind:click="submit">确定</van-button>
+    </view>
+
+</view>

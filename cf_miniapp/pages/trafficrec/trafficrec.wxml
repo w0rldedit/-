@@ -1,0 +1,98 @@
+<view>
+    <van-cell-group>       
+        <van-field
+        model:value="{{ fly }}"
+        label="飞机"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        type="number"
+        />
+        <van-field
+        model:value="{{ highrail }}"
+        label="高铁"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ ship }}"
+        label="船"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ train }}"
+        label="火车"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ metro }}"
+        label="地铁"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ bus }}"
+        label="公交"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ car }}"
+        label="大巴"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ moto }}"
+        label="摩托"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ electaxi }}"
+        label="网约车(电动)"
+        clearable="true"
+        title-width="80px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ gastaxi }}"
+        label="网约车(汽油)"
+        clearable="true"
+        title-width="80px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+        <van-field
+        model:value="{{ drive }}"
+        label="自驾"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入公里数（km）"
+        />
+    </van-cell-group>
+
+    <view style="text-align: center;margin-top: 20rpx;">
+        <van-button round type="primary"color="#0eDCC6"bind:click="submit">确定</van-button>
+    </view>
+
+</view>

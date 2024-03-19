@@ -1,0 +1,93 @@
+<!--index.wxml-->
+<view class="container" style="background-image: url(/image/back.png);background-size: 100% 100%;">
+    <view>
+        <van-tabs type="line" line-width="200rpx" line-height="12rpx" color="#426666" class="table" animated swipeable bind:click="onClick">
+            <van-tab title="记录我的碳足迹" name="记录碳足迹">
+                <view>
+                    <van-steps
+                    steps="{{ steps }}"
+                    active="{{ active }}"
+                    active-icon="success"
+                    active-color="#1bd1a5"
+                    />
+                </view>
+                <view style="margin-bottom: -40rpx;margin-top: 50rpx;">
+                    <van-grid use-slot="true"  clickable="true" column-num="2" gutter="{{ 50 }}" square>
+                        <van-grid-item use-slot link-type="navigateTo"url="/pages/clothesrec/clothesrec">
+                            <image style="width: 60%; height: 54px;" src="/image/index_image/clothes.png"/>
+                            <text >衣</text>
+                        </van-grid-item>
+                        <van-grid-item use-slot icon="search"link-type="navigateTo"url="/pages/foodrec/foodrec">
+                            <image style="width: 60%; height: 54px;" src="/image/index_image/food.png"/>
+                            <text>食</text> 
+                        </van-grid-item>
+                        <van-grid-item use-slot link-type="navigateTo"url="/pages/roomrec/roomrec">
+                            <image style="width: 60%; height: 54px;" src="/image/index_image/room.png"/>
+                            <text >住</text>    
+                        </van-grid-item>
+                        <van-grid-item use-slot link-type="navigateTo"url="/pages/trafficrec/trafficrec">
+                            <image style="width: 60%; height: 54px;" src="/image/index_image/traffic.png"/>
+                            <text>行</text>    
+                        </van-grid-item>
+                    </van-grid>
+                </view>
+                
+                <view style="margin: 0rpx 0rpx;text-align: center;margin-bottom: 180rpx;">
+                    <van-button round type="primary"color="linear-gradient(to right, #549688, #1bd1a5)"bind:click="upload">提交</van-button>
+                </view>
+            </van-tab>
+
+
+            <van-tab title="了解碳足迹"name="了解碳足迹">
+                <view>
+                    <van-notice-bar scrollable="true"
+                    color="#1989fa"
+                    background="#ecf9ff"
+                    left-icon="info-o"
+                    text="目前常用的计算碳足迹的方法有4种"
+                    />
+                </view>
+                <view>
+                    <swiper autoplay="true" interval="3000"	circular="true"	previous-margin="50rpx"	style="height: 400rpx;margin-top: -110rpx;"	next-margin="50rpx"	indicator-dots="true">
+                        <block wx:for="{{swiperList}}" wx:key="*this">
+                        <swiper-item>
+                            <image src="{{item}}"mode="aspectFit"></image>
+                        </swiper-item>
+                        </block>
+                    </swiper>
+                    
+                </view>
+                    
+                <view style="text-align: center;">
+                    <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+                        <van-collapse-item title="实现碳达峰倒计时" name="1">
+                            <view style="background: #f9906f;">
+                                <van-count-down time="{{ time }}" format="DD 天 HH 时 mm 分 ss 秒 " />
+                            </view>
+                            
+                        </van-collapse-item>
+                        <van-collapse-item title="何为碳足迹" name="2">
+                            <image src="/image/未命名的设计 (8).png"></image>
+                        </van-collapse-item>
+                        <van-collapse-item title="为何记录碳足迹" name="3">
+                            <view>
+                                <text style="color: mediumspringgreen;font-size: 30rpx;">   You will die but the carbon will not; its career does not end with you. It will return to the soil, and there a plant may take it up again in time, sending it once more on a cycle of plant and animal life”. -Jacob Bronowski</text>
+                                <image src="/image/back1.png" mode="heightFix"></image>
+                            </view>
+                        </van-collapse-item>
+                        <van-collapse-item title="记录碳足迹的单位" name="4">
+                            二氧化碳当量——CO2-eq
+                        </van-collapse-item>
+                    </van-collapse>
+
+                    
+                </view>
+
+            </van-tab>
+        </van-tabs>
+
+                
+
+    </view>
+
+</view>

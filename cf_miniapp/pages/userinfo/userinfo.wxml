@@ -1,0 +1,43 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view style="margin: 20rpx 0;">
+
+    <view style="margin: 40rpx;text-align: center">
+        
+        <image src="/image/logo.jpg"  style="height: 60px;width: 60px;border-radius: 100rpx;" />
+        <!-- <van-icon name="smile-o" size="50px"color="orange"/> -->
+    </view>
+    <van-cell-group inset>
+        <van-cell title="用户名" value="{{ user.username }}" />
+        <van-cell title="昵称" value="{{ user.nickname }}" />
+        <van-cell title="手机号" value="{{ user.mobile }}" />
+    </van-cell-group>
+    <view>
+        <van-cell title="我的碳足迹需要__棵树吸收10年" is-link bind:click="showPopup" />
+        <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+        <van-divider borderColor="#1bd1a5"/>
+        <van-cell title="关于" is-link bind:click="showPopup" />
+        <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+        <van-cell title="公告" is-link bind:click="showPopup" />
+        <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+        <van-cell title="建议与反馈" is-link bind:click="showPopup" />
+        <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+        <van-divider borderColor="#1bd1a5"/>
+        <van-cell
+        is-link
+        title="切换账号"
+        link-type="navigateTo"
+        url="/pages/login/login"
+        />
+        <van-cell
+        is-link
+        title="注销"
+        bind:click="logout"
+        />
+        <van-divider borderColor="#1bd1a5"/>
+    </view>
+    <view>
+
+    </view>
+
+
+</view>

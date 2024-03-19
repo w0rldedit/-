@@ -1,0 +1,32 @@
+<!--pages/register/register.wxml-->
+<view style="margin: 60rpx 100rpx;">
+    <van-field
+        model:value="{{ username }}"
+        left-icon="user-o"
+        placeholder="请输入用户名"
+        />
+    </view>
+    <view style="margin: 60rpx 100rpx;">
+    <van-field
+        model:value="{{ password }}"
+        left-icon="user-o"
+        placeholder="请输入密码"
+        />
+    </view>
+    <view style="margin: 60rpx 100rpx;">
+    <van-field
+        model:value="{{ nickname }}"
+        left-icon="user-o"
+        placeholder="请输入昵称"
+        />
+    </view>
+    <view style="margin: 60rpx 100rpx;">
+    <van-field
+        model:value="{{ mobile }}"
+        left-icon="user-o"
+        placeholder="请输入手机号码"
+        />
+    </view>
+    <view style="margin: 60rpx 100rpx;text-align: center;">
+    <van-button round type="primary"color="#0eDCC6"bind:click="regis">确认注册</van-button>
+    </view>

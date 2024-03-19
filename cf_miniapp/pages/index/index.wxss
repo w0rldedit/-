@@ -1,0 +1,4 @@
+/**index.wxss**/
+.table{
+    background-color: aqua;
+}

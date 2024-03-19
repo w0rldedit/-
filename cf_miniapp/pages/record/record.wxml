@@ -1,0 +1,7 @@
+<!--pages/record/record.wxml-->
+<van-cell-group inset>
+  <van-cell title="衣物碳足迹合计" value="{{ clothes.totalCarbon }}" label="kgCO2-eq" />
+  <van-cell title="食物碳足迹合计" value="{{ food.foodTotal }}" label="kgCO2-eq" />
+  <van-cell title="居住碳足迹合计" value="{{ room.roomTotal }}" label="kgCO2-eq" />
+  <van-cell title="交通碳足迹合计" value="{{ traffic.trafficTotal }}" label="kgCO2-eq" />
+</van-cell-group>

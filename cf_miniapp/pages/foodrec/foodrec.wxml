@@ -1,0 +1,146 @@
+<view>
+    <van-cell-group>       
+        <van-field
+        model:value="{{ riceAmount }}"
+        label="米饭"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入米饭g数"
+        />
+        <van-field
+        model:value="{{ grainsAmount }}"
+        label="谷物类"
+        clearable="true"
+        title-width="50px"
+        input-align="center"
+        placeholder="请输入谷物g数"
+        />
+        <van-field
+        model:value="{{ pulsesAmount }}"
+        label="豆制品"
+        clearable="true"
+        title-width="50px"
+        input-align="center"
+        placeholder="请输入豆制品g数"
+        />
+        <van-field
+        model:value="{{ fishAmount }}"
+        label="鱼"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入鱼类g数"
+        />
+        <van-field
+        model:value="{{ beefAmount }}"
+        label="牛肉"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入牛肉g数"
+        />
+        <van-field
+        model:value="{{ muttonAmount }}"
+        label="羊肉"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入羊肉g数"
+        />
+        <van-field
+        model:value="{{ porkAmount }}"
+        label="猪肉"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入猪肉g数"
+        />
+        <van-field
+        model:value="{{ chickenAmount }}"
+        label="鸡肉"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入鸡肉g数"
+        />
+        <van-field
+        model:value="{{ teaAmount }}"
+        label="茶叶平均"
+        clearable="true"
+        title-width="60px"
+        input-align="center"
+        placeholder="请输入茶叶g数"
+        />
+        <van-field
+        model:value="{{ eggsAmount }}"
+        label="鸡蛋"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入鸡蛋g数"
+        />
+        <van-field
+        model:value="{{ oilAmount }}"
+        label="食用油"
+        clearable="true"
+        title-width="50px"
+        input-align="center"
+        placeholder="请输入食用油ml数"
+        />
+        <van-field
+        model:value="{{ vegetablesAmount }}"
+        label="蔬菜"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入蔬菜g数"
+        />
+        <van-field
+        model:value="{{ fruitAmount }}"
+        label="水果"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入水果g数"
+        />
+        <van-field
+        model:value="{{ flourAmount }}"
+        label="面粉"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入面粉g数"
+        />
+        <van-field
+        model:value="{{ alcoholAmount }}"
+        label="酒类"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入酒ml数"
+        />
+        <van-field
+        model:value="{{ milkAmount }}"
+        label="牛奶"
+        clearable="true"
+        title-width="40px"
+        input-align="center"
+        placeholder="请输入牛奶ml数"
+        />
+        <van-field
+        model:value="{{ sodasAmount }}"
+        label="碳酸饮料"
+        clearable="true"
+        title-width="60px"
+        input-align="center"
+        placeholder="请输入碳酸饮料瓶数"
+        />
+
+    </van-cell-group>
+
+    <view style="text-align: center;margin-top: 20rpx;">
+        <van-button round type="primary"color="#0eDCC6"bind:click="submit">确定</van-button>
+    </view>
+
+</view>
